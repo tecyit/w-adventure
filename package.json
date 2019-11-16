@@ -1,42 +1,45 @@
 {
-	"name": "w-adventure",
-	"version": "0.1.0",
-	"private": true,
-	"dependencies": {
-		"react": "^16.12.0",
-		"react-dom": "^16.12.0",
-		"react-scripts": "3.2.0"
-	},
-	"devDependencies": {
-		"eslint-config-airbnb": "^",
-		"eslint-config-prettier": "^",
-		"eslint-plugin-import": "^",
-		"eslint-plugin-jest": "^",
-		"eslint-plugin-jsx-a11y": "^",
-		"eslint-plugin-prettier": "^",
-		"eslint-plugin-react": "^",
-		"prettier": "^"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"lint": "eslint . --fix"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	}
+  "name": "w-adventure",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "serve": "^11.2.0"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --fix",
+    "heroku-postbuild": "npm run build"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^",
+    "eslint-config-prettier": "^",
+    "eslint-plugin-import": "^",
+    "eslint-plugin-jest": "^",
+    "eslint-plugin-jsx-a11y": "^",
+    "eslint-plugin-prettier": "^",
+    "eslint-plugin-react": "^",
+    "prettier": "^"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
