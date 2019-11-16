@@ -1,7 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-function App() {
-  return <h2>Hello Adventure</h2>;
+function App({ currentUser }) {
+  return <h2>Hello {currentUser}</h2>;
 }
 
-export default App;
+const mapStateToProps = state => ({
+  currentUser: state.auth.currentUser,
+});
+
+export default connect(mapStateToProps)(App);
